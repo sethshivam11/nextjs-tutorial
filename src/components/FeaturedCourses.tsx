@@ -26,7 +26,7 @@ function FeaturedCourses() {
           <h2 className="text-base text-teal-600 font-sembold tracking-wide uppercase">
             FEATURED COURSES
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+          <p className="mt-4 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
             Learn with the Best
           </p>
         </div>
