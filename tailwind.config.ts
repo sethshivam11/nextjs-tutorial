@@ -33,7 +33,9 @@ const config: Config = {
     },
     animation: {
       spotlight: "spotlight 2s ease .75s 1 forwards",
-      shimmer: "shimmer 2s linear infinite"
+      shimmer: "shimmer 2s linear infinite",
+      scroll:
+        "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
     },
     keyframes: {
       spotlight: {
@@ -52,6 +54,11 @@ const config: Config = {
         },
         to: {
           backgroundPosition: "-200% 0",
+        },
+      },
+      scroll: {
+        to: {
+          transform: "translate(calc(-50% - 0.5rem))",
         },
       },
     },
