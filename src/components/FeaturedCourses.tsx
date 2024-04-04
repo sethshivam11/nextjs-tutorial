@@ -31,7 +31,7 @@ function FeaturedCourses() {
           </p>
         </div>
       </div>
-      <div className="mt-10">
+      <div className="mt-10 sm:px-0 px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {courses.map((course, index) => (
             <div key={index} className="flex justify-center">
@@ -43,14 +43,14 @@ function FeaturedCourses() {
                   <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
                     {course.description}
                   </p>
-                    <Link href={course.slug} className="my-4 border-2 border-zinc-100 px-4 py-2 rounded-md hover:text-black hover:bg-zinc-100 transition ease-linear">Learn more</Link>
+                    <Link href="/courses" className="my-4 border-2 border-zinc-100 px-4 py-2 rounded-md hover:text-black text-white hover:bg-zinc-100 transition ease-linear">Learn more</Link>
                 </div>
               </BackgroundGradient>
             </div>
           ))}
         </div>
       </div>
-      <div className="mt-20 text-center">
+      <div className="mt-10 text-center">
         <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
           <Link href="/courses">View all Courses</Link>
         </button>
